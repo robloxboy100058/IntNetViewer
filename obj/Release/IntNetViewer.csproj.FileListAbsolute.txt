@@ -1,0 +1,11 @@
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\bin\Release\IntNetViewer.exe.config
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\bin\Release\IntNetViewer.exe
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\bin\Release\IntNetViewer.pdb
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.csproj.AssemblyReference.cache
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.csproj.SuggestedBindingRedirects.cache
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.Form1.resources
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.Properties.Resources.resources
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.csproj.GenerateResource.cache
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.csproj.CoreCompileInputs.cache
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.exe
+C:\Users\christian.DESKTOP-COMMAND\Documents\Code\IntNetViewer\obj\Release\IntNetViewer.pdb
