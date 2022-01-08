@@ -8,4 +8,4 @@ Windows Support In Development
 
 Note/bug: If you Extract the app with MacOS Archive Utility, it will slightly corrupt the executable file.
 
-Fix: Open Terminal.app and run command "sudo chmod +x /<installation directory/IntNetViewer.app/Contents/MacOS/IntNetViewer" or use other archive extraction software
+Fix: Open Terminal.app and run command "sudo chmod +x /<installation directory>/IntNetViewer.app/Contents/MacOS/IntNetViewer" or use other archive extraction software
