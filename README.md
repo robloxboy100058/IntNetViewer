@@ -4,7 +4,7 @@ IntNetViewer is a WebKit-based web browser that is simple, but fast!
 
 Supports Mac OS X 10.8-the latest version your mac supports (Note: the WebView i used was deprecated in macOS 10.14)
 
-Windows Support Now Available
+Windows Support In Development
 
 Note/bug: If you Extract the app with MacOS Archive Utility, it will slightly corrupt the executable file.
 
