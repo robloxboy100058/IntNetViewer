@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA3060B5275909E7008451D6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3060B4275909E7008451D6 /* WebKit.framework */; };
+		AA49FE8627B213DD001D9AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49FE8527B213DD001D9AFB /* Cocoa.framework */; };
 		AADCB849274C339700974459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCB848274C339700974459 /* AppDelegate.m */; };
 		AADCB84B274C33A400974459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADCB84A274C33A400974459 /* Assets.xcassets */; };
 		AADCB84E274C33A400974459 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADCB84C274C33A400974459 /* MainMenu.xib */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		AA3060B4275909E7008451D6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AA49FE8527B213DD001D9AFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AADCB844274C339700974459 /* IntNetViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntNetViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADCB847274C339700974459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AADCB848274C339700974459 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA49FE8627B213DD001D9AFB /* Cocoa.framework in Frameworks */,
 				AA3060B5275909E7008451D6 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +44,7 @@
 		AA3060B3275909E6008451D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA49FE8527B213DD001D9AFB /* Cocoa.framework */,
 				AA3060B4275909E7008451D6 /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -222,7 +226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -299,9 +303,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robloxboy1000.IntNetViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -322,9 +327,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robloxboy1000.IntNetViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
