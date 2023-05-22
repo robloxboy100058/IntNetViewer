@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106AD2BE2A1969BD008DBC5D /* WebBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 106AD2BD2A1969BD008DBC5D /* WebBrowserView.m */; };
+		106AD2C22A1AA740008DBC5D /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 106AD2C12A1AA73F008DBC5D /* home.html */; };
 		AA3060B5275909E7008451D6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3060B4275909E7008451D6 /* WebKit.framework */; };
 		AA49FE8627B213DD001D9AFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49FE8527B213DD001D9AFB /* Cocoa.framework */; };
 		AADCB849274C339700974459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AADCB848274C339700974459 /* AppDelegate.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		106AD2BC2A19698D008DBC5D /* WebBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserView.h; sourceTree = "<group>"; };
+		106AD2BD2A1969BD008DBC5D /* WebBrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserView.m; sourceTree = "<group>"; };
+		106AD2C12A1AA73F008DBC5D /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
 		AA3060B4275909E7008451D6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AA49FE8527B213DD001D9AFB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AADCB844274C339700974459 /* IntNetViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntNetViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +75,7 @@
 		AADCB846274C339700974459 /* IntNetViewer */ = {
 			isa = PBXGroup;
 			children = (
+				106AD2C12A1AA73F008DBC5D /* home.html */,
 				AADCB847274C339700974459 /* AppDelegate.h */,
 				AADCB848274C339700974459 /* AppDelegate.m */,
 				AADCB84A274C33A400974459 /* Assets.xcassets */,
@@ -77,6 +83,8 @@
 				AADCB84F274C33A400974459 /* Info.plist */,
 				AADCB850274C33A400974459 /* main.m */,
 				AADCB852274C33A400974459 /* IntNetViewer.entitlements */,
+				106AD2BC2A19698D008DBC5D /* WebBrowserView.h */,
+				106AD2BD2A1969BD008DBC5D /* WebBrowserView.m */,
 			);
 			path = IntNetViewer;
 			sourceTree = "<group>";
@@ -121,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = AADCB83F274C339700974459 /* Build configuration list for PBXProject "IntNetViewer" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -144,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADCB84B274C33A400974459 /* Assets.xcassets in Resources */,
+				106AD2C22A1AA740008DBC5D /* home.html in Resources */,
 				AADCB84E274C33A400974459 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +166,7 @@
 			files = (
 				AADCB851274C33A400974459 /* main.m in Sources */,
 				AADCB849274C339700974459 /* AppDelegate.m in Sources */,
+				106AD2BE2A1969BD008DBC5D /* WebBrowserView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -292,18 +302,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IntNetViewer/IntNetViewer.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 969A26KM7T;
+				DEVELOPMENT_ASSET_PATHS = IntNetViewer/home.html;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = IntNetViewer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.02;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robloxboy1000.IntNetViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -316,18 +324,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IntNetViewer/IntNetViewer.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 969A26KM7T;
+				DEVELOPMENT_ASSET_PATHS = IntNetViewer/home.html;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = IntNetViewer/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.02;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 1.03;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robloxboy1000.IntNetViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  IntNetViewer
 //
-//  Created by Christian Chapa on 11/22/21.
+//  Created by robloxboy1000 on 11/22/21.
 //  Copyright © 2021 robloxboy1000. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic, strong) NSWindow *window;
 
 @end
 
